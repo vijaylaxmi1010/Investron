@@ -7,9 +7,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, LSTM, Dropout
 
 # Initialize TVDatafeed
-username = "YOUR_TRADINGVIEW_USERNAME"
-password = "YOUR_TRADINGVIEW_PASSWORD"
-tv = TvDatafeed(username, password)
+tv = TvDatafeed()
 
 # Fetch Stock Data
 def fetch_stock_data(symbol, exchange, interval, n_bars=1000):
